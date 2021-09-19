@@ -6,7 +6,10 @@ const Schema = mongoose.Schema;
 const BlogPostSchema = new Schema({
     title: String,
     body: String,
-    date: $$CLUSTER_TIME
+    date: {
+        type: Date,
+        default: Date.now()
+    }
 });
 
 // Model
