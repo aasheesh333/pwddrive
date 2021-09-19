@@ -22,7 +22,7 @@ class App extends React.Component {
       .then((response) => {
         const data = response.data;
         this.setState({ posts: data });
-      alert(data)
+      alert(json.stringify(data))
         console.log('Data has been received!!');
       })
       .catch(() => {
