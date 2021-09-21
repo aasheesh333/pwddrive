@@ -4,6 +4,33 @@ const router = express.Router();
 
 const BlogPost = require('../models/blogPost');
 
+//testing
+
+
+//testing PostMan api for getting details from appinventor
+  
+
+  function makeGetRequest(path) {
+    axios.get(path).then(
+        (response) => {
+            var result = response.data;
+            console.log(result);
+        },
+        (error) => {
+            console.log(error);
+        }
+    );
+}
+makeGetRequest('/send');
+
+//ending appinventor or post man test
+  
+
+
+//testing
+
+
+
 
 // Routes
 router.get('/', (req, res) => {
