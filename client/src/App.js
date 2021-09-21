@@ -4,22 +4,7 @@ import axios from 'axios';
 
 import './App.css';
 
-class App extends React.Component {
-
-  state = {
-    title: '',
-    body: '',
-    posts: []
-  };
-
-  componentDidMount = () => {
-    this.getBlogPost();
-  };
-
-  
-  
-  
-   //testing PostMan api for getting details from appinventor
+//testing PostMan api for getting details from appinventor
   
 
   function makeGetRequest(path) {
@@ -33,13 +18,24 @@ class App extends React.Component {
         }
     );
 }
-makeGetRequest('.../app/send');
+makeGetRequest('https://pwddrive.herokuapp.com//app/send');
 
 //ending appinventor or post man test
   
-  
-  
-  
+
+class App extends React.Component {
+
+  state = {
+    title: '',
+    body: '',
+    posts: []
+  };
+
+  componentDidMount = () => {
+    this.getBlogPost();
+  };
+
+
   getBlogPost = () => {
   
     axios.get('/api')
