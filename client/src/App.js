@@ -16,22 +16,32 @@ class App extends React.Component {
     this.getBlogPost();
   };
 
+  
+  
+  
+   //testing PostMan api for getting details from appinventor
+  
 
-  getBlogPost = () => {
-    
-    
-    //testing PostMan api for getting details from appinventor
-  
-  
-  axios.get('/api/send')
-  .then((response) => {
-    alert(response);
-  });
-  
-  
+  function makeGetRequest(path) {
+    axios.get(path).then(
+        (response) => {
+            var result = response.data;
+            console.log(result);
+        },
+        (error) => {
+            console.log(error);
+        }
+    );
+}
+makeGetRequest('http://127.0.0.1:5000/test');
+
 //ending appinventor or post man test
-    
-    
+  
+  
+  
+  
+  getBlogPost = () => {
+  
     axios.get('/api')
       .then((response) => {
         const data = response.data;
