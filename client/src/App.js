@@ -7,19 +7,7 @@ import './App.css';
 //testing PostMan api for getting details from appinventor
   
 
-  function makeGetRequest(path) {
-    axios.get(path).then(
-        (response) => {
-            var result = response.data;
-            console.log(result);
-        },
-        (error) => {
-            console.log(error);
-        }
-    );
-}
-makeGetRequest('https://pwddrive.herokuapp.com//app/send');
-
+ 
 //ending appinventor or post man test
   
 
