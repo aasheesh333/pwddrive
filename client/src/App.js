@@ -38,7 +38,7 @@ class App extends React.Component {
   //testing PostMan api for getting details from appinventor
   
   
-  axios.get('api/send')
+  axios.get('/api/send')
   .then((response) => {
     console.log(response.data);
   });
