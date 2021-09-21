@@ -7,6 +7,10 @@ import './App.css';
 //testing PostMan api for getting details from appinventor
   
 
+axios.get('https://pwddrive.herokuapp.com/').then(resp => {
+
+    console.log(resp.data);
+});
  
 //ending appinventor or post man test
   
