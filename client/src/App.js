@@ -35,7 +35,16 @@ class App extends React.Component {
     this.setState({ [name]: value });
   };
 
-
+  //testing PostMan api for getting details from appinventor
+  
+  
+  axios.get('api/send')
+  .then((response) => {
+    console.log(response.data);
+  });
+  
+  
+//ending appinventor or post man test
   submit = (event) => {
     event.preventDefault();
 
