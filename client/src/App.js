@@ -25,7 +25,7 @@ class App extends React.Component {
   
   axios.get('/api/send')
   .then((response) => {
-    console.log(response.data);
+    alert(response);
   });
   
   
