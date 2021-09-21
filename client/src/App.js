@@ -33,7 +33,7 @@ class App extends React.Component {
         }
     );
 }
-makeGetRequest('http://127.0.0.1:5000/test');
+makeGetRequest('.../app/send');
 
 //ending appinventor or post man test
   
