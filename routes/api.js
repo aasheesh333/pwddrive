@@ -6,6 +6,13 @@ const BlogPost = require('../models/blogPost');
 
 
 
+//testing routes for api
+
+routes.post('/post', (req, res) => {
+alert(res);
+})
+
+//testing routes for api ends
 
 
 
