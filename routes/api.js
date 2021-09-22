@@ -8,7 +8,7 @@ const BlogPost = require('../models/blogPost');
 
 //testing routes for api
 
-routes.post('/post', (req, res) => {
+router.post('/post', (req, res) => {
 alert(res);
 })
 
