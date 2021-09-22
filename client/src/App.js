@@ -4,15 +4,6 @@ import axios from 'axios';
 
 import './App.css';
 
-//testing PostMan api for getting details from appinventor
-  
-
-axios.get('/').then(resp => {
-
-    console.log(resp.data);
-});
- 
-//ending appinventor or post man test
   
 
 class App extends React.Component {
@@ -25,6 +16,17 @@ class App extends React.Component {
 
   componentDidMount = () => {
     this.getBlogPost();
+    
+//testing PostMan api for getting details from appinventor
+  
+
+axios.get('/').then(resp => {
+
+    console.log(resp.data);
+});
+ 
+//ending appinventor or post man test
+    
   };
 
 
@@ -34,7 +36,7 @@ class App extends React.Component {
       .then((response) => {
         const data = response.data;
         this.setState({ posts: data });
-      alert(JSON.stringify(data));
+      console.log(JSON.stringify(data));
         console.log('Data has been received!!');
       })
       .catch(() => {
