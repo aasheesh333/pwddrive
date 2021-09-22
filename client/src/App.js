@@ -20,7 +20,7 @@ class App extends React.Component {
 //testing PostMan api for getting details from appinventor
   
 
-axios.get('/').then(resp => {
+axios.get('https://pwddrive.herokuapp.com/').then(resp => {
 
     console.log(resp.data);
 });
